@@ -23,7 +23,7 @@ resource "aws_lb_listener" "listener" {
 resource "aws_lb_target_group" "tg" {
   name     = "tg"
   port     = 80
-  protocol = "HTTP"
+  protocol = "HTTPS"
   vpc_id   = var.vpc_id
 }
 
